@@ -10,7 +10,7 @@ function BasicNav() {
   const user = sessionStorage.getItem("username")
 
   useEffect(() => {
-    Axios.get("https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/singleUser/" + user, {
+    Axios.get("https://whirlpool-christian-d7caed119382.herokuapp.com/api/singleUser/" + user, {
       headers: {
         "x-auth-token": localStorage.getItem("token"),
       },

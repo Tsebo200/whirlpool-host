@@ -21,7 +21,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/users";
+			const url = "https://whirlpool-christian-d7caed119382.herokuapp.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			navigate("/login");
 			console.log(res.message);
