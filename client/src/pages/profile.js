@@ -30,13 +30,13 @@ function Profile() {
     // gets the image of the user
     useEffect(() => {
         if (userMail) {
-            axios.get('http://localhost:5001/api/singleUser/' + userMail)
+            axios.get('https://whirlpool-christian-d7caed119382.herokuapp.com/api/singleUser/' + userMail)
                 .then(res => {
                     let data = res.data;
                     setUserData(data);
                     console.log(JSON.stringify(data.profilePic));
 
-                    setUserPic("http://localhost:5001/userImages/" + data.profilePic)
+                    setUserPic("https://whirlpool-christian-d7caed119382.herokuapp.com/userImages/" + data.profilePic)
 
                 })
                 .catch(err => console.log(err))
@@ -86,7 +86,7 @@ function Profile() {
         payloadData.append("information", JSON.stringify(payload));
         payloadData.append('image', userImage); // Append the file with the name to FormData
 
-        axios.put("http://localhost:5001/api/users/profilePic/" + userMail, payloadData)
+        axios.put("https://whirlpool-christian-d7caed119382.herokuapp.com/api/users/profilePic/" + userMail, payloadData)
             .then((res) => {
                 if (res) {
                     console.log("Item Added");
@@ -114,7 +114,7 @@ function Profile() {
 
     // edit the users info
     const handleSave = () => {
-        axios.put(`http://localhost:5001/api/updateUser/${userMail}`, editData)
+        axios.put(`https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateUser/${userMail}`, editData)
             .then(res => {
                 setUserData(res.data);
                 setShowModal(false);
@@ -130,7 +130,7 @@ function Profile() {
     };
 
     const confirmDeleteAccount = () => {
-        axios.delete(`http://localhost:5001/api/deleteUser/${userMail}`)
+        axios.delete(`https://whirlpool-christian-d7caed119382.herokuapp.com/api/deleteUser/${userMail}`)
             .then((response) => {
                 console.log("User account deletedcessfully");
                 navigate('/login');

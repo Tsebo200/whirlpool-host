@@ -8,7 +8,7 @@ function PreviousQuestions() {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5001/api/namedQuestions/' + firstName)
+        axios.get('https://whirlpool-christian-d7caed119382.herokuapp.com/api/namedQuestions/' + firstName)
             .then(response => {
                 setQuestions(response.data);
             })

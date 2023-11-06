@@ -53,7 +53,7 @@ const HomeQuestion = (props) => {
                 }
             }
 
-            Axios.patch('http://localhost:5001/api/updateQuestion/' + props.productId, payload)
+            Axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateQuestion/' + props.productId, payload)
                 .then(res => {
                     if (res) {
                         console.log("Like Updated " + props.productId)
@@ -88,7 +88,7 @@ const HomeQuestion = (props) => {
                 }
             }
 
-            Axios.patch('http://localhost:5001/api/updateQuestion/' + props.productId, payload)
+            Axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateQuestion/' + props.productId, payload)
                 .then(res => {
                     if (res) {
                         console.log("Like Updated")
@@ -130,7 +130,7 @@ const HomeQuestion = (props) => {
                 }
             }
 
-            Axios.patch('http://localhost:5001/api/updateQuestion/' + props.productId, payload)
+            Axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateQuestion/' + props.productId, payload)
                 .then(res => {
                     if (res) {
                         console.log("Dislike Updated")
@@ -164,7 +164,7 @@ const HomeQuestion = (props) => {
                 }
             }
 
-            Axios.patch('http://localhost:5001/api/updateQuestion/' + props.productId, payload)
+            Axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateQuestion/' + props.productId, payload)
                 .then(res => {
                     if (res) {
                         console.log("Dislike Updated")

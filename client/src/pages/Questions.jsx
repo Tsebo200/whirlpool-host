@@ -27,7 +27,7 @@ function Questions() {
 
   //Read Questions
   useEffect(() => {
-    axios.get(`http://localhost:5001/api/allQuestions?tag=${selectedTag || ''}`)
+    axios.get(`https://whirlpool-christian-d7caed119382.herokuapp.com/api/allQuestions?tag=${selectedTag || ''}`)
       .then(res => {
         let QuestionData = res.data;
         setTotalQuestions(QuestionData.length); // Add this line

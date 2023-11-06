@@ -17,8 +17,8 @@ function SingleQuestion() {
     // handles question deleting
     const handleDelete = async () => {
         try {
-            await axios.delete('http://localhost:5001/api/deleteQuestion/' + question.id);
-            axios.delete('http://localhost:5001/api/deleteComments/' + question.title);
+            await axios.delete('https://whirlpool-christian-d7caed119382.herokuapp.com/api/deleteQuestion/' + question.id);
+            axios.delete('https://whirlpool-christian-d7caed119382.herokuapp.com/api/deleteComments/' + question.title);
             sessionStorage.removeItem('question')
             console.log("question and all comments deleted");
             window.location = "/question";
@@ -29,13 +29,13 @@ function SingleQuestion() {
 
     // gets the image of the question
     useEffect(() => {
-        axios.get('http://localhost:5001/api/singleQuestion/' + question.id)
+        axios.get('https://whirlpool-christian-d7caed119382.herokuapp.com/api/singleQuestion/' + question.id)
             .then(res => {
                 let data = res.data;
                 setWienerBalls(data);
                 console.log(JSON.stringify(data.image));
 
-                setQuePic("http://localhost:5001/questionImages/" + data.image)
+                setQuePic("https://whirlpool-christian-d7caed119382.herokuapp.com/questionImages/" + data.image)
 
             })
             .catch(err => console.log(err))

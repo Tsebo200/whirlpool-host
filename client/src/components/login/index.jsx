@@ -15,7 +15,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:5001/api/auth";
+			const url = "https://whirlpool-christian-d7caed119382.herokuapp.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			sessionStorage.setItem("username", data.email)
