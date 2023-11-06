@@ -54,7 +54,7 @@ const MyModal = ({ showModal, handleClose }) => {
     payloadData.append("information", JSON.stringify(payload));
     payloadData.append("image", questionImage); // Append the image file to the payload
 
-    axios.post("https://whirlpool-christian-d7caed119382.herokuapp.com/api/newQuestion", payloadData)
+    axios.post("https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/newQuestion", payloadData)
       .then((res) => {
         if (res) {
           console.log("Question Added");

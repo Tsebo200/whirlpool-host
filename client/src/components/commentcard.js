@@ -18,7 +18,7 @@ function SingleComment() {
 
     // gets comments based on the currently viewed question
     useEffect(() => {
-        axios.get("https://whirlpool-christian-d7caed119382.herokuapp.com/api/comments/" + queTitle)
+        axios.get("https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/comments/" + queTitle)
             .then((res) => {
                 setComments(res.data);
             })
@@ -36,7 +36,7 @@ function SingleComment() {
                 likes: commentLikes
             };
 
-            axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateComment/' + commentID, payload)
+            axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/updateComment/' + commentID, payload)
                 .then(res => {
                     if (res) {
                         console.log("Like Updated " + commentID);
@@ -54,7 +54,7 @@ function SingleComment() {
                 likes: commentLikes
             };
 
-            axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com/api/updateComment/' + commentID, payload)
+            axios.patch('https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/updateComment/' + commentID, payload)
                 .then(res => {
                     if (res) {
                         console.log("Like Updated " + commentID);
@@ -70,7 +70,7 @@ function SingleComment() {
     const handleDelete = async (commentID) => {
         if (permissions === 'true') {
             try {
-                await axios.delete('https://whirlpool-christian-d7caed119382.herokuapp.com/api/deleteComment/' + commentID);
+                await axios.delete('https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/deleteComment/' + commentID);
                 // Update the state or redirect to reflect the deletion
                 console.log("Comment deleted")
             } catch (error) {

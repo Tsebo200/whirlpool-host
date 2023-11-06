@@ -26,7 +26,7 @@ function NewComment() {
             }
 
             console.log(payload)
-            axios.post("https://whirlpool-christian-d7caed119382.herokuapp.com/api/newComment/", payload)
+            axios.post("https://whirlpool-christian-d7caed119382.herokuapp.com:5001/api/newComment/", payload)
             .then((res) => {
                 if (res) {
                 console.log("Comment posted");

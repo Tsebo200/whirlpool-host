@@ -10,7 +10,7 @@ const authRoutes = require('./routes/auth')
 
 //Used with React()
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://whirlpool-christian-d7caed119382.herokuapp.com/'
 }))
 
 app.use(express.json())
