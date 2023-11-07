@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "client-install": "node server/index.js",
-    "client-build": "node server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node index.js",
+    "dev": "nodemon index"
   },
   "author": "",
   "license": "ISC",
