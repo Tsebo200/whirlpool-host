@@ -32,6 +32,7 @@
 - [Final Outcome](#final-outcome)
     - [Mockups](#mockups)
     - [Walkthrough](#walkthrough)
+    - [Deployed Site](#deployed-site)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -147,7 +148,7 @@ stipulate functionality and improvements that can be implemented in the future.
 ## Walkthrough
 <p>You can view the walkthrough video <a href="https://drive.google.com/file/d/1xgmkC0OvS-_fuqtiHQIZKY5BHqz9ktbV/view?usp=sharing">here</a></p>
 
-## Web URL
+## Deployed Site
 To view the deployed website click on the name here: <a href="https://whirlpool-christian-d7caed119382.herokuapp.com/">Whirlpool</a>
 
 # Author
