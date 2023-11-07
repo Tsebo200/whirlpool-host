@@ -9,8 +9,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "client-install": "node server/index.js",
-    "client-build": "node server/index.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
     "dev": "concurrently \"nmp run server\" \"npm run client\""
   },
   "author": "",
