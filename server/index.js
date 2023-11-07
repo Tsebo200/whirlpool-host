@@ -1,7 +1,8 @@
 require('dotenv/config')
 const express = require('express')
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
+const path = require('path');
 const mongoose = require('mongoose')
 const QuestionRoutes = require('./routes/questions')
 const CommentRoutes = require('./routes/comments')
@@ -34,8 +35,8 @@ app.get('*', (req, res) => {
 app.use(QuestionRoutes)
 app.use(CommentRoutes)
 
-app.use("/api/users", userRoutes)
-app.use("/api/auth", authRoutes)
+// app.use("/api/users", userRoutes)
+// app.use("/api/auth", authRoutes)
 app.use("/questionImages", express.static("questionImages"))
 
 app.use('/userImages', express.static("userImages"))
