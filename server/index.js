@@ -24,9 +24,6 @@ app.use((req, res, next) => {
 //     origin: '*'
 // }))
 
-app.use("/api/users", userRoutes)
-app.use("/api/auth", authRoutes)
-
 app.use('/questionImages', express.static('questionImages'))
 app.use('/userImages', express.static('userImages'))
 app.use(express.json())
@@ -35,6 +32,8 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(QuestionRoutes)
 app.use(CommentRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/auth', authRoutes)
 app.use(userRoutes)
 app.use(authRoutes)
 
