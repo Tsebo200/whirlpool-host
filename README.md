@@ -146,10 +146,10 @@ stipulate functionality and improvements that can be implemented in the future.
 ![image10](./Mockup/Mockup7.png)
 
 ## Walkthrough
-<p>You can view the walkthrough video <a href="https://drive.google.com/file/d/1xgmkC0OvS-_fuqtiHQIZKY5BHqz9ktbV/view?usp=sharing">here</a></p>
+<p>You can view the walkthrough video <a href="https://drive.google.com/file/d/1fRtey-FAGqqVVek-yrNdK8LUv8RFwII6/view?usp=sharing">here</a></p>
 
 ## Deployed Site
-To view the deployed website click on the name here: <a href="https://whirlpool-christian-d7caed119382.herokuapp.com/">Whirlpool</a>
+To view the deployed website click on the name here: <a href="https://whirlpool-tsebo-7050966d6db6.herokuapp.com/">Whirlpool</a>
 
 # Author
 - **Christian Krahtz** - [Github](https://github.com/CWKrahtz)
@@ -162,6 +162,9 @@ To view the deployed website click on the name here: <a href="https://whirlpool-
 Distributed under the MIT License. See `LICENSE` for more information.\
 
 - **Original Project Link** - https://github.com/GlenDorner221358/Whirlpool
+
+## Contact
+**Tsebo Ramonyalioa** - [tsebo.ramonyalioa.an@gmail.com](mailto:tsebo.ramonyalioa.an@gmail.com) - [@inspiration200200](https://www.instagram.com/inspiration__200/) 
 
 # Acknowledgements
 
